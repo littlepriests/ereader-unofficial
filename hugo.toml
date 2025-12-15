@@ -11,8 +11,8 @@ url = "https://help.kobo.com/hc/en-us/articles/360019123773-Kobo-eReader-User-Gu
 weight = 1
 
 [[menu.main]]
-name = "KOReader repo"
-url = "https://github.com/koreader/koreader" 
+name = "Koreader repo"
+url = "https://github.com/Koreader/Koreader" 
 weight = 2
 
 [[menu.main]]

@@ -25,19 +25,20 @@
         
         &lt;p&gt;
     &lt;img src=&#34;.././images/amiBook.jpg&#34; alt=&#34;Ami with a book&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;The goal of this site is to simplify some procedures I&amp;rsquo;ve seen online so you can personalize your ereader. I think in an era where tech companies want us overly dependent on their (usually $$$, subscription-based) solutions, learning how to DIY your device into something that oozes your personality is really empowering&amp;hellip; and not in the stupid tech world way. I think tech companies make money off us when we don&amp;rsquo;t understand how our devices work and now more than ever I believe we need to be more proactive with tinkering with our devices. ♡&lt;/p&gt;
+&lt;p&gt;Something I&amp;rsquo;ve noticed perusing Mobile Reads or Reddit is that nontechnical users are unfamiliar with how file management and directories work, as well as the best way to tinker with your device. I want to help in any way I can, so the goal of this site is to simplify some procedures so you can personalize your ereader.&lt;/p&gt;
+&lt;p&gt;I think in an era where tech companies want us overly dependent on their (usually $$$, subscription-based) solutions, learning how to DIY your device into something that oozes your personality is really empowering&amp;hellip; and not in the stupid tech world way. I think tech companies make money off us when we don&amp;rsquo;t understand how our devices work and now more than ever I believe we need to be more proactive with tinkering with our devices. ♡&lt;/p&gt;
 &lt;h2&gt;My Kobo set up&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;my-kobo-set-up&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#my-kobo-set-up&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve been reading more than I have in years thanks to my ereader. I&amp;rsquo;ve also caught the DIY, hacking bug. Here&amp;rsquo;s what my current set up looks like with KOReader (and some other plugins):&lt;/p&gt;
+    &lt;a href=&#34;#my-kobo-set-up&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I&amp;rsquo;ve been reading more than I have in years thanks to my ereader. I&amp;rsquo;ve also caught the DIY, hacking bug. Here&amp;rsquo;s what my current set up looks like with Koreader (and some other plugins):&lt;/p&gt;
 &lt;p&gt;
     &lt;img src=&#34;.././images/my-kobo.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;I&amp;rsquo;ve used:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;NickelMenu to launch KOReader&lt;/li&gt;
+&lt;li&gt;NickelMenu to launch Koreader&lt;/li&gt;
 &lt;li&gt;ProjectTitle plugin&lt;/li&gt;
 &lt;li&gt;A plugin that lets me use my Nintendo Switch joycon as a page turner&lt;/li&gt;
 &lt;li&gt;A few patches I&amp;rsquo;ve experimented with&lt;/li&gt;
 &lt;li&gt;Custom fonts&lt;/li&gt;
-&lt;li&gt;Custom screensavers for the default Kobo device and KOReader&lt;/li&gt;
+&lt;li&gt;Custom screensavers for the default Kobo device and Koreader&lt;/li&gt;
 &lt;li&gt;Custom icons for every menu item&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;In the past I&amp;rsquo;ve had Wallabag, Rakuyomi, and some other plugins. I don&amp;rsquo;t use those right now, but I have gotten them to work.&lt;/p&gt;
@@ -58,50 +59,43 @@
       <description>
         
         
-        &lt;p&gt;This doc is for nontechnical users wanting to personalize their Kobo ereader. The doc won&amp;rsquo;t cover how to jailbreak your Kindle, nor should you assume that it&amp;rsquo;ll help you use Koreader on non-Kobo devices. If you&amp;rsquo;re someone who already had a Github account before your ereader, then go ahead and &lt;a href=&#34;http://localhost:1313/docs/get-started&#34;&gt;start here&lt;/a&gt;. If you&amp;rsquo;re still wondering what the hell GitHub is, then you&amp;rsquo;ve landed on the right place. Hi there!&lt;/p&gt;
-&lt;p&gt;Something I&amp;rsquo;ve noticed perusing Mobile Reads or Reddit is that nontechnical users are unfamiliar with how file management and directories work, as well as the best way to tinker with your device. I&amp;rsquo;ll include some key terms at the end of the procedures that you should at minimum understand before installing KOreader, and some next steps.&lt;/p&gt;
+        &lt;p&gt;This doc is for nontechnical users wanting to personalize their Kobo ereader. If you&amp;rsquo;re someone who already had a Github account before your ereader, then go ahead and &lt;a href=&#34;http://localhost:1313/docs/install-koreader/&#34;&gt;start here&lt;/a&gt;. If you&amp;rsquo;re still wondering what the hell GitHub is and what people mean when they refer to the root, then you&amp;rsquo;re in a good spot.&lt;/p&gt;
 &lt;h2&gt;Create a new folder in &lt;code&gt;.kobo&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;create-a-new-folder-in-kobo&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#create-a-new-folder-in-kobo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;We&amp;rsquo;re going to introduce a bunch of concepts by first working on a task: creating a screensaver folder in your &lt;code&gt;.kobo&lt;/code&gt; directory. This task is intended to give you firmer footing ahead of installing Koreader.&lt;/p&gt;
-&lt;h3&gt;Objectives&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;objectives&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#objectives&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;By the end of this doc, you will have:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;A new screensaver folder with an image of your choice&lt;/li&gt;
-&lt;li&gt;Made sense of what a directory is, and what your Kobo directory looks like&lt;/li&gt;
-&lt;/ul&gt;
+    &lt;a href=&#34;#create-a-new-folder-in-kobo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;We&amp;rsquo;re going to introduce a bunch of concepts by first working on a task: creating a screensaver folder in your &lt;code&gt;.kobo&lt;/code&gt; directory. This task is intended to give you firmer footing on how file structures work before we install Koreader, which is famously a pain in the ass.&lt;/p&gt;
 &lt;h3&gt;Step 1: Plug in your Kobo via USB to your PC&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-1-plug-in-your-kobo-via-usb-to-your-pc&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-1-plug-in-your-kobo-via-usb-to-your-pc&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;First thing&amp;rsquo;s first: at the end of the day all devices are just a bunch of folders and files that you can view in your File Explorer, and your Kobo is no different. So, let&amp;rsquo;s plug it in:&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././images/beginners-directory.png&#34; alt=&#34;Image that shows directory for plugged-in Kobo&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+    &lt;img src=&#34;../images/beginners-directory.png&#34; alt=&#34;Image that shows directory for plugged-in Kobo&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;The screenshot shows a plugged in Kobo (&lt;code&gt;KOBOeReader(D:)&lt;/code&gt;) and all the folders that make up my Kobo&amp;rsquo;s &lt;strong&gt;root directory&lt;/strong&gt;. The difference between a root directory and regular directory is that &lt;strong&gt;root&lt;/strong&gt; indicates the top-most level in a file structure. Sometimes people will call something root when it&amp;rsquo;s not, so tread carefully and always clarify what folder they mean.&lt;/p&gt;
-&lt;p&gt;As you can see, I have a bunch of directories (or folders, but we&amp;rsquo;ll use the term directories throughout these docs) that you may or may not have. &lt;code&gt;.adds&lt;/code&gt; is where Nickelmenu and KOreader will eventually live; &lt;code&gt;Books&lt;/code&gt; is where I keep all my epubs (which live in subdirectories by genre); &lt;code&gt;.fonts&lt;/code&gt; is where I&amp;rsquo;ve added my own fonts; and so on.&lt;/p&gt;
+&lt;p&gt;As you can see, I have a bunch of directories (or folders, but we&amp;rsquo;ll use the term directories throughout these docs) that you may or may not have. &lt;code&gt;.adds&lt;/code&gt; is where Nickelmenu and Koreader will eventually live; &lt;code&gt;Books&lt;/code&gt; is where I keep all my epubs (which live in subdirectories by genre); &lt;code&gt;.fonts&lt;/code&gt; is where I&amp;rsquo;ve added my own fonts; and so on.&lt;/p&gt;
 &lt;p&gt;But let&amp;rsquo;s ignore all that for now and move on to the second step.&lt;/p&gt;
 &lt;h3&gt;Step 2: Create a folder in &lt;code&gt;.kobo&lt;/code&gt;&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-2-create-a-folder-in-kobo&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-2-create-a-folder-in-kobo&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol&gt;
-&lt;li&gt;Select &lt;code&gt;.kobo&lt;/code&gt; to open the main Kobo directory:&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;Select &lt;code&gt;.kobo&lt;/code&gt; to open the main Kobo directory. A bunch of stuff appears; take a look, then ignore all of it for now:&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././kobo-directory.png&#34; alt=&#34;Image that shows an uncollapsed .kobo directory&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Anyway, when you selected &lt;code&gt;.kobo&lt;/code&gt;, a bunch of stuff appears. Ignore that for now.&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Create a new folder called &lt;code&gt;screensaver&lt;/code&gt;. Your directory should look like this:&lt;/li&gt;
-&lt;/ol&gt;
+    &lt;img src=&#34;.././images/kobo-directory.png&#34; alt=&#34;Image that shows an uncollapsed .kobo directory&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Create a new folder called &lt;code&gt;screensaver&lt;/code&gt;. This is where you&amp;rsquo;ll add new images so when your Kobo is asleep or powered off, you&amp;rsquo;ll have something custom on display. Your directory should look like this:&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././screensaver-dotkobo.png&#34; alt=&#34;Image that shows an uncollapsed .kobo directory, but with a new folder called screensaver&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;This is where you&amp;rsquo;ll add new images so when your Kobo is asleep or powered off, you&amp;rsquo;ll have something custom on display.&lt;/p&gt;
+    &lt;img src=&#34;.././images/screensaver-dotkobo.png&#34; alt=&#34;Image that shows an uncollapsed .kobo directory, but with a new folder called screensaver&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Re: &lt;code&gt;.kobo&lt;/code&gt;: This is one of two directories you&amp;rsquo;ll be using quite a bit.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Generally speaking, making changes to the &lt;code&gt;.kobo&lt;/code&gt; directory introduces new behaviors and ~outcomes for your default Kobo software.&lt;/li&gt;
-&lt;li&gt;You may occasionally need to add something to &lt;code&gt;.kobo&lt;/code&gt; even if you&amp;rsquo;re modifying something in KOreader, so be cognizant of what folder you&amp;rsquo;re adding shit to in future procedures.&lt;/li&gt;
+&lt;li&gt;You may occasionally need to add something to &lt;code&gt;.kobo&lt;/code&gt; even if you&amp;rsquo;re modifying something in Koreader, so be cognizant of what folder you&amp;rsquo;re adding shit to in future procedures.&lt;/li&gt;
 &lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
 &lt;h3&gt;Step 3. Add an image&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-3-add-an-image&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-3-add-an-image&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Find an image and add it to screensavers. A copy from the downloaded image on your PC and a paste into the new folder will do:&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././screensaver-folder.png&#34; alt=&#34;Image of screensaver folder with some images&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;I use a Kobo Libra Color, and the resolution size that gets the full screen effect is 926x1200. Don&amp;rsquo;t know what aspect ratio that is, so can&amp;rsquo;t help anyone there.&lt;/p&gt;
+    &lt;img src=&#34;.././images/screensaver-folder.png&#34; alt=&#34;Image of screensaver folder with some images&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;p&gt;I use a Kobo Libra Color, and the resolution size that gets the full screen effect is 926x1200. Don&amp;rsquo;t know what aspect ratio that is, so can&amp;rsquo;t help anyone there. As far as I can tell image titles and file extensions (that is the &lt;code&gt;.png&lt;/code&gt; and &lt;code&gt;.jpg&lt;/code&gt;) aren&amp;rsquo;t super important, though IIRC my Kobo didn&amp;rsquo;t load any  &lt;code&gt;.webp&lt;/code&gt; images.&lt;/p&gt;
 &lt;h3&gt;Step 4. Safely eject&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;step-4-safely-eject&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#step-4-safely-eject&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Any time you want to test if some modification worked, you need to safely eject. To safely eject, right click on &lt;code&gt;KOBOeReader (D:)&lt;/code&gt; and choose &lt;strong&gt;Eject&lt;/strong&gt;. Don&amp;rsquo;t just unplug your device.&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././safely-eject.png&#34; alt=&#34;Image of menu options with Eject highlighted&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+    &lt;img src=&#34;.././images/safely-eject.png&#34; alt=&#34;Image of menu options with Eject highlighted&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;p&gt;Your Kobo will update, then turn on. Put your Kobo in sleep mode and the image you added should appear. :)&lt;/p&gt;
 &lt;h3&gt;Let&amp;rsquo;s review really quick&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;lets-review-really-quick&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#lets-review-really-quick&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Earlier I said that tinkering with devices is just playing with files and folders. Everything you do here on out will follow this broad procedure:&lt;/p&gt;
@@ -115,13 +109,13 @@
 &lt;h2&gt;What&amp;rsquo;s next?&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;whats-next&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#whats-next&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;You have two options for the next part of your journey. You can either:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/the-tools&#34;&gt;Get an introduction to tools&lt;/a&gt; like VS Code, GitHub, KOreader.
+&lt;li&gt;&lt;a href=&#34;http://localhost:1313/docs/the-tools&#34;&gt;Get an introduction to tools&lt;/a&gt; like VS Code, GitHub, Koreader.
 &lt;ul&gt;
 &lt;li&gt;These aren&amp;rsquo;t prerequisites and many might see it as overkill, though I do not.&lt;/li&gt;
 &lt;li&gt;In other words this doc is just &lt;em&gt;my opinion&lt;/em&gt; and the suggestions that come from that, and won&amp;rsquo;t be recommended in any forum.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Or jump right into &lt;a href=&#34;http://localhost:1313/docs/install-koreader/&#34;&gt;getting started with installing KOreader&lt;/a&gt;.&lt;/li&gt;
+&lt;li&gt;Or jump right into &lt;a href=&#34;http://localhost:1313/docs/install-koreader/&#34;&gt;getting started with installing Koreader&lt;/a&gt;.&lt;/li&gt;
 &lt;/ul&gt;
 
       </description>
@@ -142,7 +136,7 @@
     </item>
     
     <item>
-      <title>Install KOReader</title>
+      <title>Install Koreader</title>
       <link>http://localhost:1313/docs/install-koreader/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -150,10 +144,11 @@
       <description>
         
         
-        &lt;p&gt;These instructions are based off &lt;a href=&#34;https://www.youtube.com/watch?v=OJ9AIJW-qGI&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the video&lt;/a&gt; created by &lt;a href=&#34;https://www.youtube.com/@jadehawk&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Techy-Notes&lt;/a&gt; on YouTube. I wanted to transcribe these procedures to preserve them, and give users more options for setting up KOReader.&lt;/p&gt;
-&lt;h2&gt;Set up KOreader as your default launcher&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;set-up-koreader-as-your-default-launcher&#34;&gt;&lt;/span&gt;
-    &lt;a href=&#34;#set-up-koreader-as-your-default-launcher&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;There is a lot of ejecting, checking, then plugging in your ereader in all of these procedures. This is intentional because you want to have a clear idea of when things stopped working. If you did all these steps without ejecting your ereader once, got to the end, and things were broken, you wouldn&amp;rsquo;t have a good idea of when things went wrong.&lt;/p&gt;
-&lt;p&gt;This is especially important when you recruit other users to help you troubleshoot. It&amp;rsquo;s much more helpful to say &amp;ldquo;I added the file during step X and it worked. But when I completed step Y, I got this error.&amp;rdquo; Be kind to yourself and safely eject, check, and replug it in.&lt;/p&gt;
+        &lt;p&gt;These instructions are based off &lt;a href=&#34;https://www.youtube.com/watch?v=OJ9AIJW-qGI&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;the video&lt;/a&gt; created by &lt;a href=&#34;https://www.youtube.com/@jadehawk&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;@Techy-Notes&lt;/a&gt; on YouTube. I wanted to transcribe these procedures to preserve them, and give users more options for setting up Koreader. The doc won&amp;rsquo;t cover how to jailbreak your Kindle, nor should you assume that it&amp;rsquo;ll help you use Koreader on non-Kobo devices.&lt;/p&gt;
+&lt;h2&gt;Set up Koreader as your default launcher&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;set-up-koreader-as-your-default-launcher&#34;&gt;&lt;/span&gt;
+    &lt;a href=&#34;#set-up-koreader-as-your-default-launcher&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;There is a lot of ejecting, checking, then plugging in your ereader in all of these procedures. This is intentional. It helps you keep clear idea of when things stopped working.&lt;/p&gt;
+&lt;p&gt;If you did all these steps without ejecting your ereader once, got to the end, and things were broken, you wouldn&amp;rsquo;t really know the phase that things went south. It&amp;rsquo;s much more helpful to say &amp;ldquo;I added the file during step X and it worked. But when I completed step Y, I got this error.&amp;rdquo;&lt;/p&gt;
+&lt;p&gt;Anyway, be kind to yourself and safely eject, check, and replug it in.&lt;/p&gt;
 &lt;h3&gt;Phase 1: Edit Kobo &lt;code&gt;.conf&lt;/code&gt; file&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phase-1-edit-kobo-conf-file&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phase-1-edit-kobo-conf-file&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start=&#34;0&#34;&gt;
 &lt;li&gt;
@@ -163,7 +158,7 @@
 &lt;p&gt;Go to &lt;strong&gt;&lt;code&gt;.kobo&lt;/code&gt; &amp;gt; Kobo &amp;gt; Kobo ereader.conf&lt;/strong&gt;.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Open the &lt;code&gt;.conf&lt;/code&gt; file in some kind of text editor (like VS Code) and add this snippet to the top of the file (Kobo will put it in the correct place when it updates):&lt;/p&gt;
+&lt;p&gt;Open the &lt;code&gt;.conf&lt;/code&gt; file in some kind of text editor (like VS Code, TextEdit, or Notepad) and add this snippet to the top of the file (Kobo will put it in the correct place when it updates):&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
 &lt;div&gt;&lt;pre&gt;&lt;code&gt;[FeatureSettings]
@@ -177,40 +172,55 @@ ExcludeSyncFolders=(\\.(?!kobo|adobe).&amp;#43;|([^.][^/]*/)&amp;#43;\\..&amp;#4
   &lt;/button&gt;
 &lt;/div&gt;
 &lt;/div&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././images/conf-edit.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Save, then safely eject your ereader.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;p&gt;
-    &lt;img src=&#34;.././conf-edit.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;
-3. Save, then safely eject your ereader.&lt;/p&gt;
-&lt;p&gt;Note: I&amp;rsquo;m not sure what this step does but I&amp;rsquo;ve reached out to Techy-Notes to confirm why we do this.&lt;/p&gt;
+&lt;div class=&#34;hx:overflow-x-auto hx:mt-6 hx:flex hx:rounded-lg hx:border hx:py-2 hx:ltr:pr-4 hx:rtl:pl-4 hx:contrast-more:border-current hx:contrast-more:dark:border-current hx:border-blue-200 hx:bg-blue-100 hx:text-blue-900 hx:dark:border-blue-200/30 hx:dark:bg-blue-900/30 hx:dark:text-blue-200&#34;&gt;
+  &lt;div class=&#34;hx:ltr:pl-3 hx:ltr:pr-2 hx:rtl:pr-3 hx:rtl:pl-2&#34;&gt;&lt;svg height=1.2em class=&#34;hx:inline-block hx:align-middle&#34; xmlns=&#34;http://www.w3.org/2000/svg&#34; fill=&#34;none&#34; viewBox=&#34;0 0 24 24&#34; stroke-width=&#34;2&#34; stroke=&#34;currentColor&#34; aria-hidden=&#34;true&#34;&gt;&lt;path stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; d=&#34;M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z&#34;/&gt;&lt;/svg&gt;&lt;/div&gt;
+
+  &lt;div class=&#34;hx:w-full hx:min-w-0 hx:leading-7&#34;&gt;
+    &lt;div class=&#34;hx:mt-6 hx:leading-7 hx:first:mt-0&#34;&gt;Note: I&amp;rsquo;m not sure what this step does but I&amp;rsquo;ve reached out to Techy-Notes to confirm why we do this. What I can confirm right now is that my Kobo has worked just fine with this edit.&lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;
+
 &lt;h3&gt;Phase 2: Install NickelMenu&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phase-2-install-nickelmenu&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phase-2-install-nickelmenu&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start=&#34;0&#34;&gt;
-&lt;li&gt;Plug in your ereader.&lt;/li&gt;
-&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/pgaskin/NickelMenu/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;release page of the NickelMenu repository&lt;/a&gt; and download the latest release of &lt;code&gt;KoboRoot.tgz&lt;/code&gt;.
+&lt;li&gt;
+&lt;p&gt;Plug in your ereader.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the &lt;a href=&#34;https://github.com/pgaskin/NickelMenu/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;release page of the NickelMenu repository&lt;/a&gt; and download the latest release of &lt;code&gt;KoboRoot.tgz&lt;/code&gt;.&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;The file you need is in the &lt;strong&gt;Assets&lt;/strong&gt; section.&lt;/li&gt;
 &lt;li&gt;I strongly recommend that you keep a copy of the most recent release handy. Nickelmenu sometimes disappears as we tinker with our ereader, and the best way to get it back is to follow the Nickelmenu install step.&lt;/li&gt;
 &lt;/ul&gt;
 &lt;/li&gt;
-&lt;li&gt;Find where &lt;code&gt;KoboRoot.tgz&lt;/code&gt; downloaded on your PC, then copy that file and paste it into the &lt;code&gt;.kobo&lt;/code&gt; directory.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;Find where &lt;code&gt;KoboRoot.tgz&lt;/code&gt; downloaded on your PC, then copy &lt;code&gt;KoboRoot.tgz&lt;/code&gt; and paste it into the &lt;code&gt;.kobo&lt;/code&gt; directory.&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././nm-koboroot.png&#34; alt=&#34;&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34;&gt;
-&lt;li&gt;
-&lt;p&gt;Eject your ereader and let it update. Confirm that &lt;strong&gt;NickelMenu&lt;/strong&gt; appears as a new menu item, then reconnect your Kobo (lol).&lt;/p&gt;
+    &lt;img src=&#34;.././images/nm-koboroot.png&#34; alt=&#34;An image that shows where KoboRoot appears inside the .kobo directory&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Note the new folder that has appeared in your directory called &lt;code&gt;.adds&lt;/code&gt;: that&amp;rsquo;s good.&lt;/p&gt;
+&lt;p&gt;Eject your ereader and let it update.&lt;/p&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Inside the &lt;code&gt;nm&lt;/code&gt; directory, create a new file called &lt;code&gt;menu&lt;/code&gt; (without a file extension) and paste in the following code snippet:&lt;/p&gt;
+&lt;p&gt;Let Kobo boot up, and confirm that &lt;strong&gt;NickelMenu&lt;/strong&gt; appears as a new menu item. Should be on the far right after &lt;strong&gt;More&lt;/strong&gt;.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Reconnect your Kobo again (lol), then look at the root directory. Notice the new folder that has appeared in your directory called &lt;code&gt;.adds&lt;/code&gt;: that&amp;rsquo;s good.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Open &lt;code&gt;.adds&lt;/code&gt; to see a new folder named &lt;code&gt;nm&lt;/code&gt;. Inside the &lt;code&gt;nm&lt;/code&gt; directory, create a new file called &lt;code&gt;menu&lt;/code&gt; (without a file extension) and paste in the following code snippet:&lt;/p&gt;
 &lt;div class=&#34;hextra-code-block hx:relative hx:mt-6 hx:first:mt-0 hx:group/code&#34;&gt;
 
 &lt;div&gt;&lt;pre&gt;&lt;code&gt;experimental :menu_main_15505_icon :/mnt/onboard/.adds/nm/.icon.png
 experimental: menu_main_15505_label : &amp;#43;NM&amp;#43;
 
-menu_item    : main                  : KOReader&amp;#43;            : cmd_spawn        :quiet       :exec /mnt/onboard/.adds/koreader/koreader.sh
+menu_item    : main                  : Koreader&amp;#43;            : cmd_spawn        :quiet       :exec /mnt/onboard/.adds/Koreader/Koreader.sh
 menu_item    : main                  : Dark Mode            : nickel_setting   : toggle     : dark_mode
 menu_item    : main                  : Screenshots          : nickel_setting   : toggle     : screenshots
 menu_item    : main                  : Import books         : nickel_misc      : rescan_books_full
@@ -244,20 +254,33 @@ menu_item    : library               : USB Connect          : nickel_misc      :
 &lt;/div&gt;
 &lt;/li&gt;
 &lt;li&gt;
-&lt;p&gt;Eject, update, and confirm that menu options appear by clicking the NickelMenu item on your default Kobo page.&lt;/p&gt;
+&lt;p&gt;Eject safely, let your ereader update, and confirm that menu options appear by clicking the NickelMenu item on your default Kobo page.&lt;/p&gt;
 &lt;/li&gt;
 &lt;/ol&gt;
-&lt;h3&gt;Phase 3: Install KOReader&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phase-3-install-koreader&#34;&gt;&lt;/span&gt;
+&lt;h3&gt;Phase 3: Install Koreader&lt;span class=&#34;hx:absolute hx:-mt-20&#34; id=&#34;phase-3-install-koreader&#34;&gt;&lt;/span&gt;
     &lt;a href=&#34;#phase-3-install-koreader&#34; class=&#34;subheading-anchor&#34; aria-label=&#34;Permalink for this section&#34;&gt;&lt;/a&gt;&lt;/h3&gt;&lt;ol start=&#34;0&#34;&gt;
-&lt;li&gt;Plug in your ereader (lol).&lt;/li&gt;
-&lt;li&gt;Go to the &lt;a href=&#34;https://github.com/koreader/koreader/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;release page of the KOReader repository&lt;/a&gt; and download the file that corresponds with your ereader device. The files you need are located in the &lt;strong&gt;Assets&lt;/strong&gt; subsection.&lt;/li&gt;
-&lt;/ol&gt;
+&lt;li&gt;
+&lt;p&gt;Plug in your ereader (lol).&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Go to the &lt;a href=&#34;https://github.com/Koreader/Koreader/releases&#34;target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;release page of the Koreader repository&lt;/a&gt; and download the file that corresponds with your ereader device. The files you need are located in the &lt;strong&gt;Assets&lt;/strong&gt; subsection.&lt;/p&gt;
 &lt;p&gt;
-    &lt;img src=&#34;.././koreader-assets.png&#34; alt=&#34;From the releases page, there’s a section called Assets. It contains the install file&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34;&gt;
-&lt;li&gt;Extract this file and find the &lt;code&gt;koreader&lt;/code&gt; subdirectory of the &lt;code&gt;koreader-v20XX&lt;/code&gt; parent directory, then copy that folder.&lt;/li&gt;
-&lt;li&gt;Paste the folder into &lt;code&gt;.adds&lt;/code&gt;. The directory should now look like this:&lt;/li&gt;
-&lt;li&gt;Eject your ereader and let it update, then view the fruits of your labor!&lt;/li&gt;
+    &lt;img src=&#34;.././images/Koreader-assets.png&#34; alt=&#34;From the releases page, there’s a section called Assets. It contains the install file&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;It&amp;rsquo;s a &lt;code&gt;.zip&lt;/code&gt; file, so we need to extract its contents. Right click the &lt;code&gt;.zip&lt;/code&gt; folder you just downloaded, and extract. A duplicate folder without the &lt;code&gt;.zip&lt;/code&gt; file extension should appear in your working directory.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Inside that newly extracted folder, find the &lt;code&gt;Koreader&lt;/code&gt; subdirectory, then right click copy that folder.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Paste the folder into &lt;code&gt;.adds&lt;/code&gt;. The directory should now look like this:&lt;/p&gt;
+&lt;p&gt;
+    &lt;img src=&#34;.././images/kr-nm-directory.png&#34; alt=&#34;An image that shows the .adds folder with the two newly installed folders&#34;  loading=&#34;lazy&#34; /&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;Eject your ereader and let it update, then view the fruits of your labor!&lt;/p&gt;
+&lt;/li&gt;
 &lt;/ol&gt;
 
       </description>
@@ -272,7 +295,7 @@ menu_item    : library               : USB Connect          : nickel_misc      :
       <description>
         
         
-        &lt;p&gt;Okay. You installed koreader and it looks like shit. Now what? lol well I guess it depends on what your goals are. What I can do is show you how I&amp;rsquo;ve set up koreader and walk you through the files I edited and plugins I&amp;rsquo;ve used to give it the look and feel I want.&lt;/p&gt;
+        &lt;p&gt;Okay. You installed Koreader and it looks like shit. Now what? lol well I guess it depends on what your goals are. What I can do is show you how I&amp;rsquo;ve set up Koreader and walk you through the files I edited and plugins I&amp;rsquo;ve used to give it the look and feel I want.&lt;/p&gt;
 
       </description>
     </item>
