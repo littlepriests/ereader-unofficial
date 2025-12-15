@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>http://localhost:57472/docs/welcome/</loc>
+  </url><url>
+    <loc>http://localhost:57472/docs/very-beginner/</loc>
+  </url><url>
+    <loc>http://localhost:57472/docs/best-practices-tools/</loc>
+  </url><url>
+    <loc>http://localhost:57472/docs/install-koreader/</loc>
+  </url><url>
+    <loc>http://localhost:57472/</loc>
+  </url><url>
+    <loc>http://localhost:57472/categories/</loc>
+  </url><url>
+    <loc>http://localhost:57472/docs/</loc>
+  </url><url>
+    <loc>http://localhost:57472/docs/customizing-koreader/</loc>
+  </url><url>
+    <loc>http://localhost:57472/tags/</loc>
+  </url>
+</urlset>
